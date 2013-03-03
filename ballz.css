@@ -1,0 +1,133 @@
+body { 
+	background-color:#fff; 
+	background-image: url("stars.jpg"); 
+	background-repeat:repeat; 
+	background-attachment: scroll; 
+	background-position: center 0 0 0; 
+	}
+	/* why doesn't this work in shorthand? check order */
+
+body { 
+	font-family: Oswald, Arial, serif; 
+	font-weight: 700; -webkit-font-smoothing: antialiased; 
+	}
+
+#page-wrap {
+position: absolute;
+left: 50%;
+width: 800px;
+margin-left: -400px;
+}
+
+
+.header { 
+	margin: 0 auto; 
+	padding: 0;
+	position: absolute;
+	width: 80%; 
+	text-align: center; 
+	text-transform: uppercase; 
+	color: #7B68EE; 
+	}
+
+  h1 {   
+  	margin: 80px auto 0; 
+  	position:relative; 
+  	display: block; 
+  	letter-spacing: .2em; 
+  	font-family: Oswald, Arial, sans-serif; 
+  	font-size: 1.2em; 
+  }
+
+  a {    
+  	margin: 0 auto 300px; 
+  	position: relative; 
+  	color: #CBD681; 
+  	text-decoration: none; 
+  	letter-spacing: .1em;  
+  	font-family: Arial Black, Arial, sans-serif; 
+  	font-size: 1.5em; 
+  }
+
+.btn { 
+	-webkit-transition: all .10s ease; 
+	margin: 0 auto 100px; 
+	padding: 2px; 
+	border-radius: 55%; 
+	color: #d6d6d6; 
+	background-color: #483D8B; 
+	opacity: 100;
+	cursor: pointer; 
+  	font-family: Arial Black; 
+   	font-size: .7em; 
+  	font-weight: bolder; 
+ 	text-align: center;  
+  	line-height: 50px; 
+  	width: 50px; 
+  	height: 50px; ;}
+
+
+.btn:hover {background-color: #369; color: #fff;}
+	/* what state button do you click on to call the animate function? plain, hover, active or visited? */
+
+
+#starz{
+	position: relative; 
+	margin: 0 auto; 
+	z-index: 2;  
+	background-image: url("url-1.gif"); 
+	background-repeat: no-repeat,repeat;
+	height: 520px; 
+	width: 680px; }
+
+/* how do you make only the starz field opacity:.3; ? */
+
+#ball { 
+	position: relative; 
+	z-index: 20; 
+	width: 160px; 
+	height: 160px; 
+	padding: 0px; /* size of the ball increases with padding */
+	margin: 0 auto 0em; /* distance to footer */
+	border-radius: 55%; 
+ 	background-image: -webkit-radial-gradient(60px 30px, farthest-side, #EBE786 5%, #CBD681 20%, #190752 100%); 
+ 	background-image: -moz-radial-gradient(yellow, green);
+ 	}
+
+
+.footer { 
+	z-index: 10;
+	position: fixed;
+	top:560px;
+	margin: 160px;
+	left: 50%;
+	width: 700px;
+	margin-left: -400px;
+	display: inline-block;
+	color: #311197;
+	font-size: 1em; 		
+	border-top: 1px solid #323232;
+	text-align: center; 
+	font-family: Oswald, Arial, sans-serif; 
+
+	}
+.footer li span { 
+	font-size: 1em; 		
+	padding: 2px; 
+	margin: 0;
+	font-family: Oswald, Arial, sans-serif; 
+
+	}
+.footer a { 
+	text-align; right;
+	color: #545c1d; 
+	font-size: 1em; 		
+	padding: 2px; 
+	margin: 0;
+	font-family: Oswald, Arial, sans-serif; 
+
+	}
+
+
+
+      
