@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">  
+		<meta name="description" content=" a bouncing ball with js">
+		<meta name="keywords" content="bouncing, 3d, ball, round, web development, kittens">
+		<meta name="author" content="Kitty Cat">
+		<!--[if IE]><style>.main{display:none;}</style><![endif]-->
+		<title>aw Create A Bouncing Ball</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="ballz.css">
+	<script language="javascript" type="text/javascript">
+   		console.log("Hello kitty!")
+	</script>
+	<noscript>
+ 		 Sorry...JavaScript is needed to go ahead.
+	</noscript>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$(".btn").on('click',function(){
+				$("#ball").animate({marginTop:"+=150px"}, 1500);
+  				$("#ball").animate({marginTop:"-=100px"});
+		    	$("#ball").effect("bounce", { times : 4}, 300);
+		        setTimeout("bounce();", 5000);
+			
+		 	}); 	
+  		});
+		
+	</script>
+
+
+
+
+ function bounceDown(){
+    $('.ball').animate({ marginTop: 140 }, 500, function(){ bounceUp(); });
+
+	</head>
+
+	<body>
+	<div id="page-wrap">
+		<div class ="header">
+			<h1>working with Javascript</h1>
+			<h2><a href="http://www.thegutterbrooklyn.com/">let's play ball!</a></h2>
+				<div id="starz"><div>
+					<div class="btn">START</div>
+      			<div id="ball"></div>
+      	</div>
+			<div class='footer'>
+				<p>3.2 Making Kittens Fly With Javascript
+					<a href="https://github.com/angelawyman/flying-kittens"<span style="color:#264c72";>• Available on GitHub •</span></a>
+				<a href="http://www.skillshare.com/profile/Angela-Wyman/544585"<span>Angela Wyman,  2013  &copy;</span></a>
+				</p>
+       		</div>
+		
+	</body>
+</html>
